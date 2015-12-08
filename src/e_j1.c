@@ -10,8 +10,9 @@
  * is preserved.
  * ====================================================
  */
-
+#ifndef __SOLO5__
 #include <assert.h>
+#endif
 
 #include "cdefs-compat.h"
 //__FBSDID("$FreeBSD: src/lib/msun/src/e_j1.c,v 1.9 2008/02/22 02:30:35 das Exp $");

@@ -1,6 +1,10 @@
 #ifndef _CDEFS_COMPAT_H_
 #define	_CDEFS_COMPAT_H_
 
+#ifdef __SOLO5__
+#include "solo5.h"
+#else
+
 #ifdef __MINIOS__
 /* No stdio.h on Mini-OS. */
 #include <sys/cdefs.h>
@@ -11,6 +15,8 @@
  */
 #include <stdio.h>
 #endif
+#endif
+
 
 #if defined(__cplusplus)
 #define	__BEGIN_DECLS	extern "C" {

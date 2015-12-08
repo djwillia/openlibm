@@ -28,12 +28,17 @@
 
 //VBS
 //#include <sys/endian.h>
+#ifdef __SOLO5__
+#include "solo5.h"
+#else
 #include <ctype.h>
+#endif
 #include <float.h>
 #include <openlibm_math.h>
 #include <stdint.h>
+#ifndef __SOLO5__
 #include <string.h> //for memset
-
+#endif
 #include "math_private.h"
 
 #if !defined(__APPLE__) && !defined(__FreeBSD__)

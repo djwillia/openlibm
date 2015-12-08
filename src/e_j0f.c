@@ -12,8 +12,9 @@
  * is preserved.
  * ====================================================
  */
-
+#ifndef __SOLO5__
 #include <assert.h>
+#endif
 #include "cdefs-compat.h"
 
 #include <openlibm_math.h>
