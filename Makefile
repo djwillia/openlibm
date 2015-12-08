@@ -74,7 +74,7 @@ test/test-float: libopenlibm.$(SHLIB_EXT)
 clean:
 	rm -f amd64/*.o arm/*.o bsdsrc/*.o i387/*.o ld128/*.o ld80/*.o src/*.o
 	rm -f libopenlibm.a libopenlibm.$(SHLIB_EXT)*
-	$(MAKE) -C test clean
+	#$(MAKE) -C test clean  ### SOLO5_CC messes up test clean, but we don't need it
 	@rm -f solo5.h
 
 openlibm.pc: openlibm.pc.in Make.inc Makefile
